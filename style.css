@@ -12,7 +12,45 @@ Tags: light, accessibility-ready
 Text Domain: planet4-child-theme-romania
 */
 
-/*
-	Display which theme is active right now in bottom right corner
-	See also planet4-child-theme-romania. Feel free to drop or hide display
-*/
+
+.happy-point-block-wrap {
+  height: 500px;
+}
+
+.happy-point-block-wrap .happy-point iframe {
+  height: 500px;
+}
+
+@media (max-width: 390px) {
+  .happy-point-block-wrap .happy-point iframe {
+    position: relative;
+    height: 650px;
+  }
+
+  .happy-point-block-wrap {
+    height: 650px;
+  }
+}
+
+@media (max-width: 576px) {
+  .happy-point-block-wrap .happy-point {
+    padding-top: 10px;
+  }
+
+  .happy-point-block-wrap .happy-point iframe {
+    position: relative;
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+.happy-point-block-wrap .happy-point {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .happy-point-block-wrap .happy-point {
+    padding-top: 100px;
+  }
+}
